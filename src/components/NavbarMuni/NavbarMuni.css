@@ -1,0 +1,64 @@
+.NavMuni{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.NavMuni2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.botonesNav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    background: none;
+    color: #2A9D8F;
+}
+
+.btn:hover{
+    color: black;
+    background-color: none;
+}
+
+#btn{
+    border: none;
+    background: none;
+    color: #2A9D8F;
+}
+
+#btn:hover{
+    color: black;
+    background-color: none;
+}
+
+#btnDrop{
+    background: none;
+    border: none;
+    color: #2A9D8F;
+}
+
+#btnDrop:hover{
+    background: none;
+    border: none;
+    color: black;
+}
+
+#btnBuscar{
+    background: none;
+    border: none;
+    color: #2A9D8F;
+}
+
+#btnBuscar:hover{
+    background: #2A9D8F;
+    border: none;
+    color: white;
+}
