@@ -4,7 +4,7 @@ import './NavbarMuni.css';
 
 
 export const NavbarMuni = () => {
-    return <Navbar expand="md" className="NavMuni">
+    return <Navbar sticky="top" expand="md" className="NavMuni">
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="NavMuni2">
@@ -15,7 +15,7 @@ export const NavbarMuni = () => {
         <div className="botonesNav">
             <Nav.Link href="#action1" id="btn">Home</Nav.Link>
             <Nav.Link href="#action2" id="btn">Link</Nav.Link>
-            <DropdownButton id="btnDrop" title="Dropdown button">
+            <DropdownButton id="btnDrop" title="Dropdown button" variant="light">
                 <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
