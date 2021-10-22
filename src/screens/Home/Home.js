@@ -1,5 +1,5 @@
 import React from "react";
-import { CarouselMuni } from "../../components/CarouselMuni/CarouselMuni";
+import { CarouselMuni } from "./CarouselMuni/CarouselMuni";
 import { Cards } from "./Cards/Cards";
 
 export const Home = () => {

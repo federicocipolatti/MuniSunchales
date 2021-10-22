@@ -1,15 +1,19 @@
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Home } from './screens/Home/Home';
 import { NavbarMuni } from './components/NavbarMuni/NavbarMuni';
 import { Footer } from './components/Footer/Footer';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './components/Router/Router';
 
 function App() {
   return (
     <div className="App">
-      <NavbarMuni/>
-      <Home/>
-      <Footer/>
+      <BrowserRouter>
+        <NavbarMuni/>
+        <Router/>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }

@@ -16,23 +16,13 @@
     display: flex;
     justify-content: left;
     align-items: center;
-}
-
-.btn{
-    border: none;
-    background: none;
-    color: #2A9D8F;
-}
-
-.btn:hover{
-    color: black;
-    background-color: none;
+    margin-left: 10px;
 }
 
 #btn{
     border: none;
     background: none;
-    color: #2A9D8F;
+    color: #2A9D8F; 
 }
 
 #btn:hover{
@@ -62,4 +52,8 @@
     background: #2A9D8F;
     border: none;
     color: white;
+}
+
+.logo-nav{
+    width: 250px;
 }
