@@ -18,7 +18,7 @@ export const NavbarMuni = () => {
             >
         <div className="botonesNav">
             <Nav.Link onClick={()=> history.push(`/`)} id="btn">Inicio</Nav.Link>
-            <Nav.Link onClick={()=> history.push(`/News`)} id="btn">Noticias</Nav.Link>
+            <Nav.Link onClick={()=> history.push(`/noticias`)} id="btn">Noticias</Nav.Link>
             <DropdownButton id="btnDrop" title="Municipio" variant="light">
                 <Dropdown.Item href="#/action-1">Autoridades</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Organigrama</Dropdown.Item>

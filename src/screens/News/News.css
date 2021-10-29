@@ -1,0 +1,11 @@
+.load{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+}
+
+.spin{
+    display: flex;
+    margin-top: 200px;
+}
