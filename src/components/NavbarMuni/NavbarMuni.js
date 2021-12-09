@@ -2,11 +2,17 @@ import React from "react";
 import { Navbar, Nav, Button, Form, FormControl, Dropdown, DropdownButton } from 'react-bootstrap';
 import './NavbarMuni.css';
 import { Link, useHistory } from 'react-router-dom';
+import { Login } from '../Login/Login';
+import { Logout } from "../Logout/Logout";
+import { Profile } from "../Profile/Profile";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 export const NavbarMuni = () => {
 
     const history = useHistory();
+
+    const { isAuthenticated } = useAuth0();
 
     return <Navbar sticky="top" expand="md" className="NavMuni">
         <Link to={'/'}><img src="images/logo-muni.jpg" alt="logo"className="logo-nav"/></Link>
@@ -20,9 +26,17 @@ export const NavbarMuni = () => {
             <Nav.Link onClick={()=> history.push(`/`)} id="btn">Inicio</Nav.Link>
             <Nav.Link onClick={()=> history.push(`/noticias`)} id="btn">Noticias</Nav.Link>
             <DropdownButton id="btnDrop" title="Municipio" variant="light">
-                <Dropdown.Item href="#/action-1">Autoridades</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Organigrama</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Gestión</Dropdown.Item>
+                <Dropdown.Item onClick={()=> history.push(`/autoridades`)} id="btn">Autoridades</Dropdown.Item>
+                <Dropdown.Item onClick={()=> history.push(`/organigrama`)} id="btn">Organigrama</Dropdown.Item>
+                <Dropdown.Item onClick={()=> history.push(`/gestion`)} id="btn">Gestión</Dropdown.Item> 
+            </DropdownButton>
+            <DropdownButton id="btnDrop" title="Perfil" variant="light">
+                {isAuthenticated ? <>
+                    <Profile/>
+                    <Logout/>
+                    </>
+                    : <Login/>
+                }    
             </DropdownButton>
         </div>
         </Nav>
