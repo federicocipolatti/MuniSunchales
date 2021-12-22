@@ -9,14 +9,16 @@
 .NavMuni2{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .botonesNav{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     margin-left: 10px;
+    flex-wrap: wrap;
 }
 
 #btn{
@@ -42,6 +44,11 @@
     color: black;
 }
 
+.search{
+    display: flex;
+    justify-content: right;
+}
+
 #btnBuscar{
     background: none;
     border: none;
@@ -56,4 +63,14 @@
 
 .logo-nav{
     width: 250px;
+}
+
+@media screen and (max-width: 430px) {
+
+    .botonesNav{
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: wrap;
+    }
+    
 }

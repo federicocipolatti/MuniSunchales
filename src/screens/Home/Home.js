@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CarouselMuni } from "./CarouselMuni/CarouselMuni";
 import { Cards } from "./Cards/Cards";
+import { NumUtiles } from "./NumUtiles/NumUtiles";
 
 const promiseContainer = () => {
 
@@ -62,7 +63,7 @@ const promiseContainer = () => {
 export const Home = () => {
 
     const [noticias, setNoticias] = useState([]); 
-
+    
     const cambioData = () => {
         promiseContainer().then(data => {
             const dataNew = data.filter(element => element.mostrar)
@@ -77,5 +78,6 @@ export const Home = () => {
     return <>
         <CarouselMuni/>
         <Cards noticias={noticias}/>
+        <NumUtiles/>
     </>
 }

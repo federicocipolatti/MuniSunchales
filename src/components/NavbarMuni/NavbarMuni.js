@@ -17,9 +17,9 @@ export const NavbarMuni = () => {
     return <Navbar sticky="top" expand="md" className="NavMuni">
         <Link to={'/'}><img src="images/logo-muni.jpg" alt="logo"className="logo-nav"/></Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className="NavMuni2">
+        <Navbar.Collapse id="navbarScroll">
         <Nav
-                className="mr-auto my-2 my-lg-0"
+                className="mr-auto my-2 my-lg-0 NavMuni2"
                 navbarScroll
             >
         <div className="botonesNav">
@@ -40,15 +40,17 @@ export const NavbarMuni = () => {
             </DropdownButton>
         </div>
         </Nav>
-        <Form className="d-flex">
-            <FormControl
-                type="search"
-                placeholder="Buscar"
-                className="mr-2"
-                aria-label="Buscar"
-            />
-            <Button id="btnBuscar">Buscar</Button>
-        </Form>
+        <div className="search">
+                <Form className="d-flex">
+                    <FormControl
+                        type="search"
+                        placeholder="Buscar"
+                        className="mr-2"
+                        aria-label="Buscar"
+                    />
+                    <Button id="btnBuscar">Buscar</Button>
+                </Form>
+            </div>
         </Navbar.Collapse>
     </Navbar>
     

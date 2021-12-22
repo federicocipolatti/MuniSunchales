@@ -45,19 +45,10 @@
     margin-top: 100px;
 }
 
-.gmap{
+.mapa{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 60%;
-}
-
-.numeros{
-    color: black;
-}
-
-.mapa {
-    display: flex;
-    justify-content: right;
 }

@@ -17,16 +17,8 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faLinkedin} style={{margin: "20px"}}/>
             </div>
         </div>
-        <div className="gmap">
-            <div className="numeros">
-                <h3>Números Útiles</h3>
-                <p>Guardia Urbana Sunchales (GUS): XXX</p>
-                <p>Policía: XXX</p>
-                <p>Punto GOB Sunchales: XXX</p>
-                <p>Servicio de emergencias médicas: XXX</p>
-            </div>
-            <div className="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9475887763424!2d-61.56339178486331!3d-30.
+         <div className="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9475887763424!2d-61.56339178486331!3d-30.
                 94402828156396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943544554d5a2f79%3A0xa4db7ef8958d9235!2s
                 Municipalidad%20de%20Sunchales!5e0!3m2!1ses!2sar!4v1634599154868!5m2!1ses!2sar" 
                 width="400" 
@@ -34,9 +26,7 @@ export const Footer = () => {
                 style={{border: "0"}} 
                 allowfullscreen="" 
                 loading="lazy">
-                </iframe>
-            </div>
-            
-        </div>
+            </iframe>
+         </div>
     </div>
 }
